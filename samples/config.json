@@ -1,0 +1,42 @@
+{
+     "MODEL_INPUT_WIDTH": 160,
+     "MODEL_INPUT_HEIGHT": 160,
+     "MODEL_INPUT_CHANNELS": 1,
+     "YOLO_SPEC": {
+          "OBJ_THRESHOLD": 0.5,
+          "NMS_THRESHOLD": 0.3,
+          "IOU_THRESHOLD": 0.4,
+          "ANCHORS": [
+               0.34,
+               1.18,
+               1.01,
+               1.02,
+               1.19,
+               0.32
+          ],
+          "NO_OBJECT_SCALE": 1.0,
+          "OBJECT_SCALE": 5.0,
+          "COORD_SCALE": 1.0,
+          "CLASS_SCALE": 1.0,
+          "CLASS_WEIGHTS": [
+               1.0
+          ],
+          "WARM_UP_BATCHES": 0,
+          "TRUE_BOX_BUFFER": 1,
+          "GRID_W": 5,
+          "GRID_H": 5
+     },
+    "TRAIN_CONFIG": {
+        "LOOP_OVER_TRAIN_SET_COUNT": 1,
+        "MAX_BATCHES": -1,
+        "MAX_EPOCHS": -1,
+        "QUANTIZE_DELAY": -1,
+        "MAX_TOLERANCE_COUNT": -1,
+        "BATCHING": {
+            "NR_CPU_CORES": 8,
+            "SHUFFLE_BUFFER_SIZE": 64,
+            "BATCH_SIZE": 32,
+            "PREFETCH_POOL_SIZE": 30
+      }
+  }
+}
